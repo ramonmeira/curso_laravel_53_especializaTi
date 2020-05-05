@@ -46,3 +46,9 @@ https://www.youtube.com/watch?v=fPs-PlQIWaw&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk
 
 php artisan make:controller SiteController
 php artisan make:controller Painel\\PainelController
+
+
+#7 Curso de Laravel 5.3 - Controllers Resource
+https://www.youtube.com/watch?v=3p4rnKmc5SM&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk4wP&index=7
+
+php artisan make:controller Painel\\ProductController --resource
