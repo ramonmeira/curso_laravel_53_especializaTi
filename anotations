@@ -39,3 +39,10 @@ https://www.youtube.com/watch?v=RPtR0XLud3A&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk
 
 #5 Curso de Laravel 5.3 - Routes Final
 https://www.youtube.com/watch?v=9EG_YCmWm5Q&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk4wP&index=5
+
+
+#6 Curso de Laravel 5.3 - Controllers
+https://www.youtube.com/watch?v=fPs-PlQIWaw&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk4wP&index=6
+
+php artisan make:controller SiteController
+php artisan make:controller Painel\\PainelController
