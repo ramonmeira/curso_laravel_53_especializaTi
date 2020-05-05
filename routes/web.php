@@ -1,5 +1,28 @@
 <?php
 
+Route::group(['prefix' => 'painel','middleware' => 'auth'], function() {
+    Route::get('/users', function() {
+        return 'users';
+    });
+    Route::get('/financeiro', function() {
+        return 'Financeiro';
+    });
+    Route::get('/', function() {
+        return 'Dashboard';
+    });
+});
+Route::get('login', function() {
+    return '#Form login';
+});
+
+Route::get('/categoria2/{idCat?}', function($idCat=1) {
+    return "Posts da categoria {$idCat}";
+});
+
+Route::get('/categoria/{idCat}/item/{idItem}', function($idCat,$idItem) {
+    return "Posts da categoria {$idCat} - {$idItem}";
+});
+
 Route::get('/nome/nome2/nome3', function() {
     return 'Big route';
 })->name('big.route');
