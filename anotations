@@ -1,3 +1,6 @@
+#1 Curso de Laravel 5.3 - Instalando o Laravel 5.3
+https://www.youtube.com/watch?v=iPTxznidNHo&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk4wP&index=1
+
 composer create-project --prefer-dist laravel/laravel curso_laravel_53_especializaTi "5.3.*"
 
 The only supported ciphers are AES-128-CBC and AES-256-CBC with the correct key lengths
@@ -8,3 +11,23 @@ git clone https://github.com/ramonmeira/curso_laravel_53_especializaTi.git
 git status
 git status -s
 git commit -m "Commit inicial"
+
+#2 Curso de Laravel 5.3 - Estrutura de Pastas do Laravel 5.3
+https://www.youtube.com/watch?v=4tpWoDL8sNs&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk4wP&index=2
+
+
+#3 Curso de Laravel 5.3 - Criar VirtualHost
+https://www.youtube.com/watch?v=QP5xeGqEf7Q&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk4wP&index=3
+
+1 - C:\wamp\bin\apache\versão do apache\conf\httpd.conf
+	# Virtual hosts
+	Include conf/extra/httpd-vhosts.conf
+2 - C:\wamp\bin\apache\apache\versão do apache\conf\extra\httpd-vhosts.conf
+	<VirtualHost *:80>
+	    ServerAdmin Ramonmeira
+	    DocumentRoot "C:/wamp64/www/Aulas/Laravel/curso_laravel_53_especializaTi/public"
+	    ServerName dev.laravel53
+	    ServerAlias dev.laravel53
+	</VirtualHost>
+3 - c:\windows\system32\drivers\etc\hosts
+	127.0.0.1		 dev.laravel53
