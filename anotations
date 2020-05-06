@@ -63,3 +63,8 @@ https://www.youtube.com/watch?v=4RQX3nLBx8E&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk
 - Ataque XSS - VIEW site.contact.index
 	{{$xss}} - imprime o contéudo como texto
 	{!!$xss!!} - imprime o contéudo como script. Usar com cuidado, apenas em lugares sem intervenção do usuário.
+
+
+#10 Curso de Laravel 5.3 - Sistema de Template Blade Final
+https://www.youtube.com/watch?v=FpUnv8IiLjk&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk4wP&index=10
+

@@ -15,11 +15,11 @@ class SiteController extends Controller
     }
 
     public function index(){
-        $teste = 123;
-        $teste2 = 67;
-        $teste3 = 897;
+        $title = 'Home';
+        $var1 = 67;
+        $arrayData = [1,2,3,4,5,6,7,8,9];
         //return view('teste',['teste' => $teste]);
-        return view('site.home.index',compact('teste','teste2','teste3'));
+        return view('site.home.index',compact('title','var1','arrayData'));
     }
 
     public function contato(){
