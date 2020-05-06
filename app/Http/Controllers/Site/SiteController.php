@@ -11,7 +11,7 @@ class SiteController extends Controller
         //$this->middleware('auth');
 
         $this->middleware('auth')
-            ->only(['contato','categoria']);
+            ->only(['categoria']);
     }
 
     public function index(){
@@ -19,11 +19,13 @@ class SiteController extends Controller
         $teste2 = 67;
         $teste3 = 897;
         //return view('teste',['teste' => $teste]);
-    	return view('site.home.home',compact('teste','teste2','teste3'));
+        return view('site.home.index',compact('teste','teste2','teste3'));
     }
 
     public function contato(){
-    	return 'Página de contato';
+        $title = 'Contato';
+        $xss = '<script>alert("Ataque XSS");</script>';
+    	return view('site.contact.index', compact('title','xss'));
     }
 
     public function categoria($idCat){

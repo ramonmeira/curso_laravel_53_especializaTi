@@ -55,3 +55,11 @@ php artisan make:controller Painel\\ProductController --resource
 
 #8 Curso de Laravel 5.3 - Views
 https://www.youtube.com/watch?v=9EyNAdsim5Q&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk4wP&index=8
+
+
+#9 Curso de Laravel 5.3 - Sistema de Template Blade
+https://www.youtube.com/watch?v=4RQX3nLBx8E&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk4wP&index=9
+
+- Ataque XSS - VIEW site.contact.index
+	{{$xss}} - imprime o contéudo como texto
+	{!!$xss!!} - imprime o contéudo como script. Usar com cuidado, apenas em lugares sem intervenção do usuário.
