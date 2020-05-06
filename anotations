@@ -52,3 +52,6 @@ php artisan make:controller Painel\\PainelController
 https://www.youtube.com/watch?v=3p4rnKmc5SM&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk4wP&index=7
 
 php artisan make:controller Painel\\ProductController --resource
+
+#8 Curso de Laravel 5.3 - Views
+https://www.youtube.com/watch?v=9EyNAdsim5Q&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk4wP&index=8
