@@ -93,3 +93,4 @@ php artisan migrate
 #13 Curso de Laravel 5.3 - Migration Refresh
 https://www.youtube.com/watch?v=uTFT0WVOP9E&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk4wP&index=13
 
+php artisan migrate:refresh
