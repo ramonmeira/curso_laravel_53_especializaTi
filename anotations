@@ -101,3 +101,9 @@ https://www.youtube.com/watch?v=sU6q1Siyw2w&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk
 
 php artisan make:seeder UsersTableSeeder
 php artisan db:seed
+
+
+#15 Curso de Laravel 5.3 - Models
+https://www.youtube.com/watch?v=S--UDpXD98A&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk4wP&index=15
+
+php artisan make:model Model\\Painel\\Product
