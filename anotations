@@ -94,3 +94,10 @@ php artisan migrate
 https://www.youtube.com/watch?v=uTFT0WVOP9E&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk4wP&index=13
 
 php artisan migrate:refresh
+
+
+#14 Curso de Laravel 5.3 - Seeders
+https://www.youtube.com/watch?v=sU6q1Siyw2w&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk4wP&index=14
+
+php artisan make:seeder UsersTableSeeder
+php artisan db:seed
