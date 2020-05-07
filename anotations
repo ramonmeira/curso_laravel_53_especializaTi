@@ -72,3 +72,24 @@ https://www.youtube.com/watch?v=FpUnv8IiLjk&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk
 #11 Curso de Laravel 5.3 - Blade @stacks
 https://www.youtube.com/watch?v=4z-k8v-I6xQ&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk4wP&index=11
 
+
+#12 Curso de Laravel 5.3 - Migrations
+https://www.youtube.com/watch?v=Y1po6jEC1-U&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk4wP&index=12
+
+.env
+	DB_CONNECTION=mysql
+	DB_HOST=localhost
+	DB_PORT=3308
+	DB_DATABASE=curso-laravel53
+	DB_USERNAME=root
+	DB_PASSWORD=123
+
+php artisan make:migration create_products_table
+composer dump-autoload
+php artisan config:cache
+php artisan migrate
+
+
+#13 Curso de Laravel 5.3 - Migration Refresh
+https://www.youtube.com/watch?v=uTFT0WVOP9E&list=PLVSNL1PHDWvR3PeLXz6nvBkDhv1IQk4wP&index=13
+
