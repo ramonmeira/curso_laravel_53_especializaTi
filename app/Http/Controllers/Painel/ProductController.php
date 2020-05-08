@@ -110,6 +110,7 @@ class ProductController extends Controller
             'description' => "Para os dentes."
         ]);
         */
+        /*
         $insert = $this->product->create([
             'name' => "Pasta de dente",
             'number' => 425234,
@@ -122,6 +123,31 @@ class ProductController extends Controller
             return "Inserido com sucesso. ID: {$insert->id}";
         } else {
             return "Falha ao inserir.";
+        }
+        */
+        /*
+        $prod = $this->product->find(5);
+        $prod->name = "UPDATE";
+        $prod->number = 234234;
+        $prod->active = false;
+        $prod->category = "bath";
+        $prod->description = "Desc Update";
+        $update = $prod->save();
+        */
+        //$prod = $this->product->find(6);
+        $prod = $this->product->where('number','>=','425234');
+        $update = $prod->update([
+            'name' => "Update 3",
+            'number' => 425234,
+            'active' => true,
+            'category' => "bath",
+            'description' => "22222"
+        ]);
+
+        if ($update) {
+            return "Alterado com sucesso.";
+        } else {
+            return "Falha ao alterar.";
         }
     }
 }
