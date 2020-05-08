@@ -134,6 +134,7 @@ class ProductController extends Controller
         $prod->description = "Desc Update";
         $update = $prod->save();
         */
+        /*
         //$prod = $this->product->find(6);
         $prod = $this->product->where('number','>=','425234');
         $update = $prod->update([
@@ -148,6 +149,19 @@ class ProductController extends Controller
             return "Alterado com sucesso.";
         } else {
             return "Falha ao alterar.";
+        }
+        */
+        //$prod = $this->product->find(2);
+        //$delete = $prod->delete();
+        //$delete = $prod->destroy([2,3,4]);
+        $delete = $this->product
+            ->where('number',425234)
+            ->delete();
+
+        if ($delete) {
+            return "Deletado com sucesso.";
+        } else {
+            return "Falha ao deletar.";
         }
     }
 }
