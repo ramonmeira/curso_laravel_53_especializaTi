@@ -8,14 +8,20 @@ use App\Model\Painel\Product;
 
 class ProductController extends Controller
 {
+    private $product;
+
+    public function __construct(Product $product){
+        $this->product = $product;
+    }
+
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Product $product)
+    public function index()
     {
-        $products = $product->all();
+        $products = $this->product->all();
         return view('painel.products.index', compact('products'));
     }
 
@@ -83,5 +89,39 @@ class ProductController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function tests(){
+        /*
+        $prod = $this->product;
+        $prod->name = "Shampoo";
+        $prod->number = 234234;
+        $prod->active = true;
+        $prod->category = "bath";
+        $prod->description = "Antes do condicionador.";
+        $insert = $prod->save();
+        */
+        /*
+        $insert = $this->product->insert([
+            'name' => "Pasta de dente",
+            'number' => 425234,
+            'active' => true,
+            'category' => "bath",
+            'description' => "Para os dentes."
+        ]);
+        */
+        $insert = $this->product->create([
+            'name' => "Pasta de dente",
+            'number' => 425234,
+            'active' => true,
+            'category' => "bath",
+            'description' => "Para os dentes."
+        ]);
+
+        if ($insert) {
+            return "Inserido com sucesso. ID: {$insert->id}";
+        } else {
+            return "Falha ao inserir.";
+        }
     }
 }

@@ -1,5 +1,6 @@
 <?php
 
+Route::get('/painel/product/tests', 'Painel\ProductController@tests');
 Route::resource('/painel/product', 'Painel\ProductController');
 
 Route::group(['namespace' => 'Site'], function() {
