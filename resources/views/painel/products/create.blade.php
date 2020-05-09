@@ -30,8 +30,8 @@
 		<input type="text" name="number" placeholder="Número:" class="form-control"  value="{{old('number')}}">
 	</div>
 	<div class="form-group">
-		<select class="form-control">
-			<option>Escolha a Categoria</option>
+		<select name="category" class="form-control">
+			<option value="">Escolha a Categoria</option>
 			@foreach($categorys as $category)
 			<option value="{{$category}}">{{$category}}</option>	
 			@endforeach
