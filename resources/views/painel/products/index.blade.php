@@ -22,8 +22,8 @@
 			<a href="{{route('product.edit',$product->id)}}" class="actions edit">
 				<span class="glyphicon glyphicon-pencil"></span>
 			</a>
-			<a href="" class="actions delete">
-				<span class="glyphicon glyphicon-trash"></span>
+			<a href="{{ route('product.show',$product->id) }}" class="actions delete">
+				<span class="glyphicon glyphicon-eye-open"></span>
 			</a>
 		</td>
 	</tr>

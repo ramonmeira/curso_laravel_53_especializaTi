@@ -90,7 +90,10 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        //
+        $product = $this->product->find($id);
+        $title = "Produto: {$product->name}";
+
+        return view('painel.products.show',compact('title','product'));
     }
 
     /**
@@ -147,7 +150,15 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $product = $this->product->find($id);
+        $delete = $product->delete();
+
+        if ($delete) {
+            return redirect()->route('product.index');
+        } else {
+            return redirect()->route('product.show', $id)
+                ->with('Errors','Falha ao deletar');
+        }
     }
 
     public function tests(){
